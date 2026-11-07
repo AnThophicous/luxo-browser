@@ -1,0 +1,12 @@
+# Checkout do código-fonte da Mozilla gerado pelo script (nunca versionar)
+upstream/
+
+# Saídas de build
+obj-*/
+.mozbuild/
+
+# Ruído de editor e sistema
+.DS_Store
+*.swp
+.idea/
+.vscode/
