@@ -1,0 +1,28 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  patch-queue:
+    name: Baixar tag e aplicar patches
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - name: Checkout deste repo
+        uses: actions/checkout@v4
+
+      - name: Baixar Firefox 159.0 e aplicar patch queue
+        run: bash scripts/fetch-upstream.sh
+
+      - name: Conferir resultado
+        run: |
+          test -d upstream/.git
+          git -C upstream log --oneline -3
+          df -h /
