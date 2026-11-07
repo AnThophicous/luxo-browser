@@ -1,6 +1,6 @@
-# clean-browser
+# LuxoBrowser
 
-Fork experimental do Firefox, baseado na tag [`FIREFOX_159_0_RELEASE`](https://github.com/mozilla-firefox/firefox/releases/tag/FIREFOX_159_0_RELEASE).
+LuxoBrowser é um fork experimental do Firefox, baseado na tag [`FIREFOX_159_0_RELEASE`](https://github.com/mozilla-firefox/firefox/releases/tag/FIREFOX_159_0_RELEASE).
 
 O objetivo é mudar a **aparência** do navegador: interface mais limpa, dinâmica e leve. O motor fica como está, salvo mudanças pontuais futuras e documentadas.
 
@@ -18,7 +18,7 @@ bash scripts/fetch-upstream.sh
 
 ## Marca
 
-Este projeto **não é o Firefox oficial** e não usa a marca "Firefox" nem os logos da Mozilla, conforme a política de marca da Fundação Mozilla. Nome e identidade visual próprios serão definidos antes de qualquer distribuição.
+Este projeto **não é o Firefox oficial** e não usa a marca "Firefox" nem os logos da Mozilla, conforme a política de marca da Fundação Mozilla. O nome do projeto é **LuxoBrowser**, com identidade visual própria (logo e ícones) a ser feita antes de qualquer distribuição de binários.
 
 ## Licença
 
